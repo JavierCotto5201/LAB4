@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/TV_nombre"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="9dp"
+                android:width="@dimen/Ancho"
+                android:height="@dimen/Altura"
+                android:fontFamily="@font/roboto1"
+                android:text="Nombre:"
+                android:textSize="@dimen/LetraTamaño3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="277dp"
+                android:paddingLeft="@dimen/Padding"
+                android:paddingTop="@dimen/Padding"
+                android:paddingRight="@dimen/Padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/guatemala" />
+
+            <EditText
+                android:id="@+id/eTnombre"
+                android:layout_width="229dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto1"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/Frase"
+                app:layout_constraintEnd_toStartOf="@+id/buttonDes"
+                app:layout_constraintStart_toEndOf="@+id/TV_nombre"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageButton
+                android:id="@+id/buttonDes"
+                android:layout_width="55dp"
+                android:layout_height="56dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/TV_nickname"
+                android:layout_width="231dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="25dp"
+                android:width="@dimen/Ancho"
+                android:height="@dimen/Altura"
+                android:textSize="@dimen/LetraTamaño3"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/buttonDes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/bAntigua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:text="@string/antigua"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/bTikal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tikal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/bAtitlan"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toEndOf="@+id/bAntigua" />
+
+            <Button
+                android:id="@+id/bAtitlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="668dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/atitlan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
