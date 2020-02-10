@@ -3,4 +3,7 @@
     <string name="antigua">Antigua</string>
     <string name="tikal">Tikal</string>
     <string name="atitlan">Atitlan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
